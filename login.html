@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>大事件-登录/注册</title>
+    <!-- 导入jQuery -->
+    <script src="/assets/lib/jquery.js"></script>
+    <!-- 导入自己的Javascript脚本 -->
+    <script src="/js/login.js"></script>
+    <!-- 导入自己的css样式表 -->
+    <link rel="stylesheet" href="./css/login.css">
+    <!-- 引入bootstrap.css样式表 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
+
 <body>
-    
+    <!-- 头部的logo区域 -->
+    <img src="/assets/images/logo.png" alt="" style="margin-left: 200px;">
+    <!-- 登录注册区域 -->
+    <div class="loginAndRegBox">
+        <div class="title-box"></div>
+        <!-- 登陆的div -->
+        <div class="login-box">
+            <!-- 登录的表单 -->
+            <form class="form" id="form_login">
+                <!-- 用户名框 -->
+                <div class="form-group">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <input type="text" name="username" class="form-control" placeholder="请输入用户名">
+                </div>
+                <!-- 密码框 -->
+                <div class="form-group">
+                    <span class="glyphicon glyphicon-lock"></span>
+                    <input type="password" name="password" class="form-control" placeholder="请输入密码">
+                </div>
+                <!-- 提交按钮 -->
+                <button type="button" class="btn-primary form-control">提交</button>
+                <div class="links">
+                    <a href="javascript:;" id="link_reg">去注册账号</a>
+                </div>
+            </form>
+        </div>
+        <!-- 注册的div -->
+        <div class="reg-box ">
+            <!-- 注册的表单 -->
+            <form class="form" id="form_reg">
+                <!-- 用户名框 -->
+                <div class="form-group">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <input type="text" name="username" class="form-control" placeholder="请输入用户名">
+                </div>
+                <!-- 密码框 -->
+                <div class="form-group">
+                    <span class="glyphicon glyphicon-lock"></span>
+                    <input type="password" name="password" class="form-control" placeholder="请输入密码">
+                </div>
+                <!-- 确认密码框 -->
+                <div class="form-group">
+                    <span class="glyphicon glyphicon-lock"></span>
+                    <input type="password" name="repassword" class="form-control" placeholder="请再次确认密码">
+                </div>
+                <!-- 注册按钮 -->
+                <button type="button" class="btn-primary form-control" id="reg">注册</button>
+                <div class="links">
+                    <a href="javascript:;" id="link_login">去登陆</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
 </body>
+
 </html>
